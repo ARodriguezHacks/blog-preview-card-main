@@ -1,0 +1,80 @@
+/* Generic styling and external script styling */
+
+:root {
+  font-family: 'Figtree', sans-serif;
+  --color-primary: hsl(47, 88%, 63%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-grey: hsl(0, 0%, 50%);
+  --color-neutral-black: hsl(0, 0%, 7%);
+  --color-attribution-link: hsl(201, 45%, 44%);
+
+  background-color: var(--color-primary);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: var(--color-neutral-black);
+}
+
+/* .figtree-light {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#app {
+  padding: 24px;
+  background-color: var(--color-neutral-white);
+  max-width: 384px;
+  min-width: 327px;
+  border: 1px solid var(--color-neutral-black);
+  border-radius: 20px;
+  box-shadow: 17px 17px 0px var(--color-neutral-black);
+
+  .image-art {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .main {
+    padding: 24px 0;
+
+    > * {
+      margin-bottom: 12px;
+    }
+
+    .ribbon {
+      background-color: var(--color-primary);
+      padding: 10px;
+      width: fit-content;
+    }
+  }
+
+  .avatar-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.attribution {
+  position: relative;
+  top: 30px;
+  text-align: center;
+
+  & a {
+    color: var(--color-attribution-link);
+  }
+}
