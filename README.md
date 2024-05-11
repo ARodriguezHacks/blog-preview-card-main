@@ -35,7 +35,7 @@ Desktop View
 ### Links
 
 - [Solution URL](https://github.com/ARodriguezHacks/blog-preview-card-main)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://arodriguezhacks.github.io/blog-preview-card-main/)
 
 ## My process
 
