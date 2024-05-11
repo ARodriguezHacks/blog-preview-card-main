@@ -27,12 +27,14 @@
 }
 
 body {
-  display: flex;
+  display: none;
+  opacity: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   padding: 24px;
-  animation: 3s ease-in-out 0.5s 1 forwards load;
+  animation: 2s ease-in-out 0.5s 1 forwards load;
 }
 
 #app {
@@ -127,6 +129,13 @@ body {
 }
 
 /* Animation when page loads */
+
+@media screen (min-width: 1440px) {
+  #app {
+    box-shadow: 17px 17px 0px var(--color-neutral-black);
+  }
+}
+
 @keyframes load {
   from {
     translate: 0 -130%;
@@ -135,11 +144,5 @@ body {
   to {
     translate: 0 0;
     opacity: 1;
-  }
-}
-
-@media screen(min-width: 1440px) {
-  #app {
-    box-shadow: 17px 17px 0px var(--color-neutral-black);
   }
 }
