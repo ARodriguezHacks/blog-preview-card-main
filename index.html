@@ -12,7 +12,8 @@
       property="og:description"
       content="Frontend Mentor | Blog preview card<"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preload" href="./style.css" as="style"/>
+    <link rel="stylesheet" href="./style.css" media="print" onload="this.media='all'"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

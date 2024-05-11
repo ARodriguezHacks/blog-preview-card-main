@@ -33,6 +33,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 24px;
+  animation: 3s ease-in-out 0.5s 1 forwards load;
 }
 
 #app {
@@ -48,7 +49,6 @@ body {
   border-radius: 20px;
   box-shadow: 10px 10px 0px var(--color-neutral-black);
   position: relative;
-  animation: 3s ease-in-out 0.5s 1 forwards load;
 
   .image-art {
     width: 100%;
