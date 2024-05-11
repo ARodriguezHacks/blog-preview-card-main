@@ -17,6 +17,7 @@
   box-sizing: inherit;
   color: var(--color-neutral-black);
 }
+
 /* Font Variable styling */
 .figtree-heavy {
   font-family: 'Figtree', sans-serif;
@@ -47,6 +48,7 @@ body {
   border-radius: 20px;
   box-shadow: 10px 10px 0px var(--color-neutral-black);
   position: relative;
+  animation: 3s ease-in-out 0.5s 1 forwards load;
 
   .image-art {
     width: 100%;
@@ -73,7 +75,8 @@ body {
     h1 {
       font-size: 24px;
       cursor: pointer;
-      /* Create a neat transition so that on hover, color changes from left to right */
+
+      /* Creates a neat transition so that on hover, text color changes from left to right */
       color: transparent;
       background-image: linear-gradient(
         100deg,
@@ -118,10 +121,27 @@ body {
   position: absolute;
   bottom: -50px;
   left: 0;
-  text-align: left;
-  width: 115%;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
 
   & a {
     color: var(--color-attribution-link);
+  }
+
+  span.author {
+    display: block;
+  }
+}
+
+/* Animation when page loads */
+@keyframes load {
+  from {
+    translate: 0 -130%;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
   }
 }

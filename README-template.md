@@ -34,8 +34,8 @@ Desktop View
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/ARodriguezHacks/blog-preview-card-main)
+- [Live Site URL](https://your-live-site-url.com)
 
 ## My process
 
@@ -43,56 +43,44 @@ Desktop View
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS Variable fonts
+- CSS animations and transitions
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+With this purely HTML and CSS project, I solidified more my understanding of the `::before` psuedo-element when it comes to creating neat animations, in addition to the differences between the `animation` and `transition` CSS properties. In the end, it takes some trial and error and an understanding that not all CSS properties can be animated or transitioned, and that it requires some due diligence to figure that out.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#app {
+  ...
+  animation: 3s ease-in-out 0.5s 1 forwards load;
+  ...
+  @keyframes load {
+    from {
+      translate: 0 -130%;
+      opacity: 0;
+    }
+    to {
+      translate: 0 0;
+      opacity: 1;
+    }
+  }
 }
+...
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+For future projects, I'm interested in improving my CSS animations and transitions, especially when loading a web page and if the page requires scrolling,in which case I want to gain more practice with the Intersection Observer Web API. The intent is to use animations and transitions for more seemless user experiences.
 
 ### Useful resources
 
-- [Hover for heading text](https://stackoverflow.com/questions/40875736/text-colour-fill-from-left-to-right-using-css) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Background-clip property](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Hover for heading text](https://stackoverflow.com/questions/40875736/text-colour-fill-from-left-to-right-using-css) - This helped me create the neat animation when hovering over the `h1` heading.
+- [Background-clip property](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip) - This property was essential for the previously mentioned custom animation.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@ARodriguezHacks](https://www.frontendmentor.io/profile/ARodriguezHacks)
+- LinkedIn - [Angie Rodriguez](https://www.linkedin.com/in/angierodriguezdev/)
