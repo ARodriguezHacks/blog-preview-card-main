@@ -50,29 +50,28 @@ body {
   box-shadow: 10px 10px 0px var(--color-neutral-black);
   position: relative;
 
-  .image-art {
+  & .image-art {
     width: 100%;
     border-radius: 10px;
   }
 
-  .main {
-
-    .section-copy {
+  & .main {
+    & .section-copy {
       margin: 24px 0;
 
-      > *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-bottom: 12px;
       }
     }
 
-    .ribbon {
+    & .ribbon {
       background-color: var(--color-primary);
       padding: 10px;
       width: fit-content;
       border-radius: 5px;
     }
 
-    h1 {
+    & h1 {
       font-size: 24px;
       cursor: pointer;
 
@@ -94,24 +93,24 @@ body {
       }
     }
 
-    p.about {
+    & p.about {
       color: var(--color-neutral-grey);
       line-height: 1.5rem;
     }
   }
 
-  .avatar-container {
+  & .avatar-container {
     display: flex;
     align-items: center;
 
-    img {
+    & img {
       width: 32px;
-      height:32px;
+      height: 32px;
       border-radius: 50%;
       box-shadow: 2px 2px 0px var(--color-neutral-grey);
     }
 
-    > * {
+    & > * {
       margin-right: 12px;
     }
   }
@@ -129,7 +128,7 @@ body {
     color: var(--color-attribution-link);
   }
 
-  span.author {
+  & span.author {
     display: block;
   }
 }
