@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Frontend Mentor | Blog preview card" />
+    <meta
+      name="description"
+      content="Frontend Mentor challenge 'Blog Preview Card' by Angie Rodriguez"
+    />
+    <meta
+      property="og:description"
+      content="Frontend Mentor | Blog preview card<"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -24,25 +35,33 @@
         class="image-art"
       />
       <main class="main">
-        <p class="ribbon"><span>Learning</span></p>
-        <p>Published 21 Dec 2023</p>
-        <h1 class="figtree-light">HTML &amp; CSS foundations</h1>
-        <p>
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
+        <section class="section-copy">
+          <p class="ribbon figtree-heavy">Learning</p>
+          <p>Published 10 May 2024</p>
+          <div>
+            <h1>HTML &amp; CSS foundations</h1>
+          </div>
+          <p class="about">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </section>
+        <section class="avatar-container">
+          <img
+            src="./assets/images/cropped-AR-2-square.webp"
+            alt="Angie Rodriguez avatar"
+          />
+          <p class="figtree-heavy">Angie Rodriguez</p>
+        </section>
       </main>
-      <div class="avatar-container">
-        <img src="./assets/images/image-avatar.webp" alt="Greg Hooper avatar" />
-        <p>Greg Hooper</p>
-      </div>
-    </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <footer class="attribution" role="contentinfo">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/ARodriguezHacks">Angie Rodriguez</a>.
+      </footer>
     </div>
   </body>
 </html>
