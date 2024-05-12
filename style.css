@@ -138,7 +138,7 @@ body {
 
 @keyframes load {
   from {
-    translate: 0 -130%;
+    translate: 0 10px;
     opacity: 0;
   }
   to {
